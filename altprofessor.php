@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link rel="stylesheet" href="style4.css">
 </head>
 <body>
 
@@ -41,25 +42,34 @@
 ?>
 <div class="fundo">
     <div class="planodefundo">
+               
+
   <form method="POST" action="crudprofessor.php">
-        <input type="text" name="nome" id="" value=<?php echo $nome?> >
-                                                
-        <input type="number" name="idade" id="" value=<?php echo $idade ?> >
-      
-        <input type="hidden" name="id" id="" value=<?php echo $id?> >
+  <label for="endereco">Nome:<input type="text" name="nome" id="um" value=<?php echo $nome?> ></label>
 
-        <input type="text" name="cpf" id="" value=<?php echo $cpf?> >
+  <label for="endereco">Idade: <input type="number" name="idade" id="um" value=<?php echo $idade ?> ></label>
+</div>
+<div class="planodefundo">
+<label for="endereco"><input type="hidden" name="id" id="um" value=<?php echo $id?> ></label>
+
+<label for="endereco">CPF: <input type="text" name="cpf" id="um" value=<?php echo $cpf?> ></label>
         
-        <input type="text" name="endereco" id="" value=<?php echo $endereco?> >
+<label for="endereco">Endereço: <input type="text" name="endereco" id="um" value=<?php echo $endereco?> ></label>
+</div>
+<div class="planodefundo">
 
-        <input type="date" name="datanascimento" id="" value=<?php echo $datanascimento?> >
+<label for="endereco">Data de nascimento: <input type="date" name="datanascimento" id="um" value=<?php echo $datanascimento?> ></label>
 
-        <input type="select" name="estatus" id="" value=<?php echo $estatus?> >
+<label for="endereco">Estatus: 0 para ativo e 1 para não ativo <input type="select" name="estatus" id="um" placeholder='amen' value=<?php echo $estatus?> ></label>
+ 
         
-        <input type="submit" name="update" value="Alterar">
-  </form>
+        <input type="submit" name="update" id=but value="Alterar">
+  </form></tr></thead>
+</table></div> 
 </div>
 </div>
+
+
 
 </body>
 </html>
